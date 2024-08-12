@@ -1,0 +1,46 @@
+
+html, body{
+    width:100%;
+    overflow-x: hidden;
+    background-color:#ffffff;
+    font-family: 'Inconsolata', monospace;
+  }
+  
+
+  h1 {
+    padding-top:100px;
+    font-size: 60px;
+    color:#45a049;
+  }
+  
+  p {
+    font-size: 20px;
+    color:#45a049;
+    white-space: nowrap;
+    border-right: solid 3px #45a049;
+    overflow: hidden; 
+  }
+  
+  p {
+    animation: animated-text 4s steps(25) 1s 1 normal both, animated-cursor 600ms steps(25) infinite; 
+  }
+  
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 340px;}
+  }
+  
+  @keyframes animated-cursor{
+    from{border-right-color: #45a049;}
+    to{border-right-color: transparent;}
+  }
+
+a {
+    text-decoration: none;
+    color: #45a049 ;
+}
+
+.espaco {
+    height: 20px;
+}
